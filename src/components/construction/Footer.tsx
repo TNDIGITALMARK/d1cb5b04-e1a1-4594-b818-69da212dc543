@@ -27,17 +27,17 @@ export function Footer() {
             <h4 className="font-bold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-white/80 hover:text-[hsl(var(--construction-orange))] transition-colors">
+                <Link href="/" className="footer-nav-link">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-white/80 hover:text-[hsl(var(--construction-orange))] transition-colors">
+                <Link href="/services" className="footer-nav-link">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-white/80 hover:text-[hsl(var(--construction-orange))] transition-colors">
+                <Link href="/contact" className="footer-nav-link">
                   Contact
                 </Link>
               </li>

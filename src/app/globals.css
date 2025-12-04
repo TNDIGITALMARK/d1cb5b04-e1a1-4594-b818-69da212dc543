@@ -308,3 +308,16 @@ input:focus, textarea:focus, select:focus {
     font-size: 4.5rem;
   }
 }
+
+/* ===== FOOTER NAVIGATION LINKS ===== */
+/* Dedicated class for footer quick links to ensure maximum visibility */
+.footer-nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-nav-link:hover {
+  color: hsl(var(--construction-orange));
+  opacity: 1;
+}
