@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Header } from '@/components/construction/Header';
 import { Footer } from '@/components/construction/Footer';
 import { ServiceCard } from '@/components/construction/ServiceCard';
@@ -41,53 +42,92 @@ export default function ServicesPage() {
                 icon={Home}
                 title="Kitchen Remodeling"
                 description="Transform your kitchen into a modern, functional space. Custom cabinetry, countertops, and complete renovations."
+                image="/generated/kitchen-remodeling.png"
               />
               <ServiceCard
                 icon={PaintBucket}
                 title="Bathroom Renovation"
                 description="Complete bathroom remodels from design to finish. Tile work, fixtures, and modern upgrades."
+                image="/generated/bathroom-renovation.png"
               />
               <ServiceCard
                 icon={Hammer}
                 title="Deck Construction"
                 description="Custom deck design and construction. Composite, wood, and multi-level deck solutions."
+                image="/generated/deck-construction.png"
               />
               <ServiceCard
                 icon={Building2}
                 title="Roofing Services"
                 description="Professional roofing installation, repair, and replacement. All types of roofing materials."
+                image="/generated/roofing-services.png"
               />
               <ServiceCard
                 icon={Drill}
                 title="Foundation Work"
                 description="Foundation repair, waterproofing, and new construction foundations. Structural expertise."
+                image="/generated/foundation-work.png"
               />
               <ServiceCard
                 icon={Warehouse}
                 title="Commercial Build-Outs"
                 description="Complete commercial construction services. Office spaces, retail, and industrial projects."
+                image="/generated/commercial-buildout.png"
               />
               <ServiceCard
                 icon={Wrench}
                 title="Home Additions"
                 description="Expand your living space with professional home additions. Seamless integration with existing structure."
+                image="/generated/home-additions.png"
               />
               <ServiceCard
                 icon={Zap}
                 title="Emergency Repairs"
                 description="24/7 emergency construction services. Fast response for urgent repairs and damage control."
+                image="/generated/emergency-repairs.png"
               />
               <ServiceCard
                 icon={Shield}
                 title="Structural Repairs"
                 description="Expert structural repair and reinforcement. Ensuring safety and stability of your property."
+                image="/generated/structural-repairs.png"
               />
             </div>
           </div>
         </section>
 
-        {/* Service Details */}
+        {/* Our Team Section */}
         <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-6">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+                Professional Team You Can Trust
+              </h2>
+
+              <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl mb-12">
+                <Image
+                  src="/generated/construction-team.png"
+                  alt="Kelsey's General Contracting Professional Team"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1200px) 100vw, 1200px"
+                  priority
+                />
+              </div>
+
+              <div className="text-center max-w-3xl mx-auto mb-12">
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Our experienced team of licensed professionals brings decades of combined expertise to every project.
+                  From initial consultation to final walkthrough, we're committed to delivering exceptional results that
+                  exceed your expectations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Service Details */}
+        <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
@@ -95,28 +135,28 @@ export default function ServicesPage() {
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Licensed & Insured</h3>
                   <p className="text-gray-600 leading-relaxed">
                     Fully licensed and insured professionals ensuring your project is protected every step of the way.
                   </p>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Workmanship</h3>
                   <p className="text-gray-600 leading-relaxed">
                     Decades of combined experience delivering exceptional results on every project, large or small.
                   </p>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">On-Time Delivery</h3>
                   <p className="text-gray-600 leading-relaxed">
                     We respect your time and budget. Projects completed on schedule with clear communication throughout.
                   </p>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Customer Satisfaction</h3>
                   <p className="text-gray-600 leading-relaxed">
                     Your satisfaction is our priority. We don't consider a job complete until you're completely satisfied.
@@ -128,7 +168,7 @@ export default function ServicesPage() {
         </section>
 
         {/* Service Area */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Service Area</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
@@ -136,16 +176,16 @@ export default function ServicesPage() {
               Contact us to confirm service availability in your area.
             </p>
             <div className="inline-flex flex-wrap justify-center gap-4 text-lg">
-              <span className="px-6 py-3 bg-gray-100 rounded-lg font-semibold text-gray-800">
+              <span className="px-6 py-3 bg-white rounded-lg font-semibold text-gray-800 shadow-md">
                 Rhode Island
               </span>
-              <span className="px-6 py-3 bg-gray-100 rounded-lg font-semibold text-gray-800">
+              <span className="px-6 py-3 bg-white rounded-lg font-semibold text-gray-800 shadow-md">
                 Southeastern MA
               </span>
-              <span className="px-6 py-3 bg-gray-100 rounded-lg font-semibold text-gray-800">
+              <span className="px-6 py-3 bg-white rounded-lg font-semibold text-gray-800 shadow-md">
                 Providence Area
               </span>
-              <span className="px-6 py-3 bg-gray-100 rounded-lg font-semibold text-gray-800">
+              <span className="px-6 py-3 bg-white rounded-lg font-semibold text-gray-800 shadow-md">
                 South County
               </span>
             </div>
