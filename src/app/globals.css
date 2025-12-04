@@ -277,3 +277,34 @@ input:focus, textarea:focus, select:focus {
   border-color: hsl(var(--primary));
   box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
 }
+
+/* ===== HERO TITLE STYLES ===== */
+/* Custom class for hero section main title with white text */
+.hero-title-white {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  letter-spacing: -0.02em;
+}
+
+/* Responsive sizing for hero title */
+@media (min-width: 768px) {
+  .hero-title-white {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title-white {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-title-white {
+    font-size: 4.5rem;
+  }
+}

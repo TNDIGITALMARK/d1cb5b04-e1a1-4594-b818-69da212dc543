@@ -44,7 +44,7 @@ export default function HomePage() {
           <div className="relative z-10 container mx-auto px-6 py-28 md:py-36 lg:py-44">
             <div className="max-w-3xl">
               <div className="bg-gradient-to-br from-gray-900/60 to-gray-900/40 backdrop-blur-sm rounded-lg p-8 md:p-10 lg:p-12 border border-white/10 shadow-2xl">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-6 leading-[1.1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                <h1 className="hero-title-white">
                   BUILDING EXCELLENCE.<br />
                   DELIVERING TRUST.
                 </h1>
