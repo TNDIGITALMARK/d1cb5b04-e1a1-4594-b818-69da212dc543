@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Kelsey's General Contracting - Licensed & Insured Contractors",
+  description: "Professional construction services in Rhode Island and Southeastern Massachusetts. Residential and commercial construction, renovations, remodeling. Licensed and insured.",
 };
 
 export default function RootLayout({
