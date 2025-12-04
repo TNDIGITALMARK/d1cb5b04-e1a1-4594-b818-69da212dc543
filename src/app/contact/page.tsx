@@ -244,14 +244,14 @@ export default function ContactPage() {
                 className="inline-flex items-center space-x-2 bg-white text-red-600 px-8 py-4 rounded font-bold text-lg hover:bg-gray-100 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span>(401) 775-9278</span>
+                <span className="phone-number !text-red-600">(401) 775-9278</span>
               </a>
               <a
                 href="tel:4018688967"
                 className="inline-flex items-center space-x-2 bg-white text-red-600 px-8 py-4 rounded font-bold text-lg hover:bg-gray-100 transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span>(401) 868-8967</span>
+                <span className="phone-number !text-red-600">(401) 868-8967</span>
               </a>
             </div>
           </div>

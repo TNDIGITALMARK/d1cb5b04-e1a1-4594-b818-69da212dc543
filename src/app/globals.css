@@ -321,3 +321,17 @@ input:focus, textarea:focus, select:focus {
   color: hsl(var(--construction-orange));
   opacity: 1;
 }
+
+/* ===== PHONE NUMBER STYLING ===== */
+/* Dedicated class for phone numbers to ensure high visibility with yellow/gold color */
+.phone-number {
+  color: #FFD700;
+  font-weight: 600;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.phone-number:hover {
+  color: #FFC700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}

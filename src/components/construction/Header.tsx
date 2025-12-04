@@ -47,7 +47,7 @@ export function Header() {
           <div className="hidden lg:flex items-center space-x-2 text-[hsl(var(--construction-blue))]">
             <Phone className="w-5 h-5" />
             <div className="text-sm">
-              <div className="font-semibold">(401) 775-9278</div>
+              <div className="phone-number">(401) 775-9278</div>
             </div>
           </div>
         </div>

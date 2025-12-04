@@ -52,7 +52,7 @@ export function Footer() {
                 <Phone className="w-4 h-4 mt-1 flex-shrink-0" />
                 <div>
                   <div className="font-medium">Herbert Holmes - Business Manager</div>
-                  <a href="tel:4017759278" className="text-white/80 hover:text-[hsl(var(--construction-orange))]">
+                  <a href="tel:4017759278" className="phone-number hover:text-[hsl(var(--construction-orange))]">
                     (401) 775-9278
                   </a>
                 </div>
@@ -61,7 +61,7 @@ export function Footer() {
                 <Phone className="w-4 h-4 mt-1 flex-shrink-0" />
                 <div>
                   <div className="font-medium">Ricky Champlin - Owner</div>
-                  <a href="tel:4018688967" className="text-white/80 hover:text-[hsl(var(--construction-orange))]">
+                  <a href="tel:4018688967" className="phone-number hover:text-[hsl(var(--construction-orange))]">
                     (401) 868-8967
                   </a>
                 </div>
