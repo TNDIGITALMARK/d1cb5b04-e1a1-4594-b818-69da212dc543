@@ -15,7 +15,7 @@ export default function HomePage() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-r from-gray-900/60 to-gray-900/40">
+        <section className="relative bg-gradient-to-r from-gray-900/70 to-gray-900/50 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <div className="grid grid-cols-2 h-full">
               <div className="relative">
@@ -26,7 +26,7 @@ export default function HomePage() {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gray-900/40"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 via-gray-900/50 to-transparent"></div>
               </div>
               <div className="relative">
                 <Image
@@ -36,25 +36,28 @@ export default function HomePage() {
                   className="object-cover"
                   priority
                 />
+                <div className="absolute inset-0 bg-gray-900/30"></div>
               </div>
             </div>
           </div>
 
-          <div className="relative z-10 container mx-auto px-6 py-24 md:py-32">
-            <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
-                BUILDING EXCELLENCE.<br />
-                DELIVERING TRUST.
-              </h1>
-              <p className="text-lg text-white/90 mb-8">
-                Professional construction services you can rely on. Licensed and insured contractors serving Rhode Island.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-block bg-[hsl(var(--construction-orange))] text-white px-8 py-4 rounded font-bold text-lg hover:bg-[hsl(var(--construction-orange))]/90 transition-colors shadow-lg"
-              >
-                Get Free Estimate
-              </Link>
+          <div className="relative z-10 container mx-auto px-6 py-28 md:py-36 lg:py-44">
+            <div className="max-w-3xl">
+              <div className="bg-gradient-to-br from-gray-900/60 to-gray-900/40 backdrop-blur-sm rounded-lg p-8 md:p-10 lg:p-12 border border-white/10 shadow-2xl">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-6 leading-[1.1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                  BUILDING EXCELLENCE.<br />
+                  DELIVERING TRUST.
+                </h1>
+                <p className="text-lg md:text-xl lg:text-2xl text-white mb-8 leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)] font-medium">
+                  Professional construction services you can rely on. Licensed and insured contractors serving Rhode Island.
+                </p>
+                <Link
+                  href="/contact"
+                  className="inline-block bg-[hsl(var(--construction-orange))] text-white px-10 py-5 rounded font-bold text-lg md:text-xl hover:bg-[hsl(var(--construction-orange))]/90 transition-all hover:scale-105 active:scale-95 shadow-2xl hover:shadow-[0_20px_40px_-10px_rgba(245,166,35,0.6)]"
+                >
+                  Get Free Estimate
+                </Link>
+              </div>
             </div>
           </div>
         </section>
